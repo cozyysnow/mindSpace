@@ -1,50 +1,51 @@
-# mindSpace
-# 🌐 Care4U – Digital Psychological Intervention System  
+Generate a full-stack project called **Care4U** – a Digital Psychological Intervention System for students.  
 
-> **Care4U** is a stigma-free, student-friendly digital mental health platform designed to provide early intervention, self-help, and professional support in a confidential and interactive way.  
+Requirements:  
 
----
+1. **Frontend (React + Tailwind CSS)**  
+   - Clean, modern, and responsive UI with nice colors, icons, and illustrations.  
+   - Mood Tracker: users select mood (happy, sad, stressed, anxious, relaxed, angry) with emojis/pictures.  
+   - Daily Self-Test: 5 simple multiple-choice questions → show a score + feedback.  
+   - Dashboard: show latest mood, last test score, and a simple 7-day report (line chart/bar chart).  
+   - Resource Hub with:  
+     - **YourDost website link (https://yourdost.com/)**.  
+     - YouTube videos for stress relief, meditation, and motivation.  
+     - Verified Indian mental health helpline numbers.  
+   - Authentication: signup/login/logout with simple forms.  
+   - Attractive home page with a welcome banner and motivational images.  
 
-## ✨ Features  
+2. **Backend (Node.js + Express)**  
+   - API endpoints for:  
+     - User authentication (signup/login).  
+     - Mood tracking (add mood, get moods).  
+     - Daily self-test (submit & fetch result).  
+     - Reports (generate last 7-day report).  
+     - Resources (return YouTube links, helplines, and YourDost link).  
+   - Use MongoDB for storage.  
+   - Enable CORS for frontend-backend connection.  
 
-### 🧠 AI-Guided First Aid  
-- Interactive chatbot for emotional first-aid.  
-- Provides coping strategies, relaxation tips, and emergency helplines.  
-- Escalates to professional help when needed.  
+3. **Database (MongoDB)**  
+   - Users: { username, email, password }  
+   - Moods: { userId, mood, timestamp }  
+   - Tests: { userId, score, date }  
+   - Resources: { title, type, link }  
 
-### 📅 Confidential Booking System  
-- Students can securely book appointments with on-campus counsellors.  
-- Integrated with **YourDOST (SRM University Sonipat)** for professional guidance.  
+4. **Preloaded Resource Data (must be added):**  
+   - YourDost: "Talk to experts" → https://yourdost.com/  
+   - Helplines:  
+     - Vandrevala Foundation Helpline: 1860 266 2345 / 1800 233 3330  
+     - AASRA Helpline (24x7): +91-9820466726 / +91-9820466727  
+     - Snehi Helpline: +91-9582208181  
+   - YouTube:  
+     - "Guided Meditation for Stress Relief" – https://www.youtube.com/watch?v=inpok4MKVLM  
+     - "Motivational Video for Students" – https://www.youtube.com/watch?v=mgmVOuLgFB0  
+     - "How to Control Anxiety" – https://www.youtube.com/watch?v=WWloIAQpMcQ  
 
-### 🎓 Self-Assessment Tests  
-- Daily & Weekly mental health self-check quizzes.  
-- Generates **personalized daily and weekly reports**.  
-- Uses a **gamified, interactive approach** to keep students engaged.  
+5. **Other requirements**  
+   - Include **package.json** and working **server.js**.  
+   - Provide a complete **README.md** with description, features, tech stack, setup steps.  
+   - Code should run with minimal setup (`npm install && npm start`).  
 
-### 📚 Resource Hub  
-- Curated **videos, audio, and wellness guides**.  
-- Available in **multiple Indian languages** (English, Hindi, Punjabi, Tamil, Marathi, Odia).  
-- Categories: Stress, Anxiety, Depression, Motivation, Relaxation.  
 
-### 🤝 Peer Support Forum  
-- Safe, moderated space for peer-to-peer support.  
-- Anonymous posting option to reduce stigma.  
 
-### 📊 Admin Dashboard  
-- Anonymous analytics for trend monitoring.  
-- Helps authorities plan **preventive interventions**.  
-
----
-
-## 🏗️ Tech Stack  
-
-- **Frontend**: HTML, CSS, JavaScript (React optional)  
-- **Backend**: Node.js + Express  
-- **Database**: MongoDB  
-- **Authentication**: JWT-based role access (Student / Admin)  
-- **Deployment**: Netlify / Vercel (Frontend) + Render / Railway (Backend)  
-
----
-
-## 📂 Project Structure  
 
